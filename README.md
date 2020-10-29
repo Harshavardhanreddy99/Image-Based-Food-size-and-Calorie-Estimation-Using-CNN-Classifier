@@ -10,3 +10,6 @@ Project Source Code : This folder contains all the projects source code
 
 
 For code Inspection the document is given by the name Inspection-Code-Mystic Gang.docx
+
+
+Development Phase 2 code is under Project Source Code folder.
