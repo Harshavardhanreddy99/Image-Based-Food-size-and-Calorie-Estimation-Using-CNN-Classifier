@@ -1,0 +1,298 @@
+
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>::User::</title>
+
+  <!-- Web-Fonts -->
+  <link href="//fonts.googleapis.com/css?family=Spartan:400,500,600,700,900&display=swap" rel="stylesheet">
+  <!-- //Web-Fonts -->
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="{% static 'assets/css/style-starter.css' %}">
+</head>
+
+<body>
+<!--header-->
+<div class="w3l-top-header">
+  <header id="site-header" class="fixed-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark stroke">
+        <a class="navbar-brand" href="index.html">
+           Food Calorie Detection
+        </a>
+        
+        <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+          <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto">
+            <li class="px-4 fill-none">
+              <a href="/userhome" class="btn btn-style btn-secondary">Home</a>
+             </li>
+            <li class="px-4 fill-none">
+              <a href="/getcalories" class="btn btn-style btn-secondary">Get Calories</a>
+             </li>
+            <li class="px-4 fill-none">
+              <a href="/userlogout" class="btn btn-style btn-secondary">Logout</a>
+             </li>
+          </ul>
+         </div>
+      </nav>
+    </div>
+  </header>
+</div>
+<!--/header-->
+
+<!-- Domain Modal -->
+<div class="modal right fade" id="DomainModal" tabindex="-1" role="dialog" aria-labelledby="DomainModalLabel2">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+          aria-hidden="true">&times;</span></button>
+        </div>
+      </div>
+    </div>
+    <!-- //modal-content -->
+  </div>
+  <!-- //modal-dialog -->
+</div>
+<!-- //Domain modal ------------------------------------------------------------------------------------------------------------->
+
+<head>
+<style>
+#tab {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+
+}
+
+#tab td, #tab th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#tab tr:nth-child(even){background-color: #f2f2f2;}
+
+#tab tr:hover {background-color: #ddd;}
+
+#tab th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #ff0033;
+    color: white;
+}
+</style>
+</head>
+
+
+
+                        {% block content %}
+
+						<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+
+                        {% endblock %}
+
+  
+		    </div>
+  </section>
+  
+  
+  <button onclick="topFunction()" id="movetop" title="Go to top">
+  	&#10548;
+  </button>
+  <script>
+  	// When the user scrolls down 20px from the top of the document, show the button
+  	window.onscroll = function () {
+  		scrollFunction()
+  	};
+
+  	function scrollFunction() {
+  		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  			document.getElementById("movetop").style.display = "block";
+  		} else {
+  			document.getElementById("movetop").style.display = "none";
+  		}
+  	}
+
+  	// When the user clicks on the button, scroll to the top of the document
+  	function topFunction() {
+  		document.body.scrollTop = 0;
+  		document.documentElement.scrollTop = 0;
+  	}
+  </script>
+  <!-- /move top -->
+  </section>
+
+  <!-- jQuery and Bootstrap JS -->
+  <script src="{% static 'assets/js/jquery-3.3.1.min.js' %}"></script>
+
+  <!-- libhtbox -->
+  
+  <script src="{% static 'assets/js/lightbox-plus-jquery.min.js' %}"></script>
+
+
+  <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+
+  <script src="{% static 'assets/js/counter.min.js' %}"></script>
+  <script>
+  	$(document).ready(function () {
+  		$('.popup-with-zoom-anim').magnificPopup({
+  			type: 'inline',
+
+  			fixedContentPos: false,
+  			fixedBgPos: true,
+
+  			overflowY: 'auto',
+
+  			closeBtnInside: true,
+  			preloader: false,
+
+  			midClick: true,
+  			removalDelay: 300,
+  			mainClass: 'my-mfp-zoom-in'
+  		});
+
+  		$('.popup-with-move-anim').magnificPopup({
+  			type: 'inline',
+
+  			fixedContentPos: false,
+  			fixedBgPos: true,
+
+  			overflowY: 'auto',
+
+  			closeBtnInside: true,
+  			preloader: false,
+
+  			midClick: true,
+  			removalDelay: 300,
+  			mainClass: 'my-mfp-slide-bottom'
+  		});
+  	});
+  </script>
+
+  <!-- testimonials owlcarousel -->
+  <script src="assets/js/owl.carousel.js"></script>
+  <script>
+  	$(document).ready(function () {
+  		$('.owl-two').owlCarousel({
+  			loop: true,
+  			margin: 30,
+  			nav: false,
+  			responsiveClass: true,
+  			autoplay: false,
+  			autoplayTimeout: 5000,
+  			autoplaySpeed: 1000,
+  			autoplayHoverPause: false,
+  			responsive: {
+  				0: {
+  					items: 1,
+  					nav: false
+  				},
+  				480: {
+  					items: 1,
+  					nav: false
+  				},
+  				667: {
+  					items: 1,
+  					nav: false
+  				},
+  				1000: {
+  					items: 1,
+  					nav: false
+  				}
+  			}
+  		})
+  	})
+  </script>
+  
+
+  <!-- script for food-->
+  <script>
+  	$(document).ready(function () {
+  		$('.owl-carousel').owlCarousel({
+  			loop: true,
+  			margin: 0,
+  			responsiveClass: true,
+  			responsive: {
+  				0: {
+  					items: 1,
+  					nav: true
+  				},
+  				480: {
+  					items: 2,
+  					nav: true,
+  					margin: 20
+  				},
+  				769: {
+  					items: 3,
+  					nav: true,
+  					margin: 20
+  				},
+  				1280: {
+  					items: 4,
+  					nav: true,
+  					loop: true,
+  					margin: 25
+  				}
+  			}
+  		})
+  	})
+  </script>
+  <!-- //script for food-->
+
+  <!-- disable body scroll which navbar is in active -->
+  <script>
+  	$(function () {
+  		$('.navbar-toggler').click(function () {
+  			$('body').toggleClass('noscroll');
+  		})
+  	});
+  </script>
+  <!-- disable body scroll which navbar is in active -->
+  <!--/MENU-JS-->
+  <script>
+  	$(window).on("scroll", function () {
+  		var scroll = $(window).scrollTop();
+
+  		if (scroll >= 80) {
+  			$("#site-header").addClass("nav-fixed");
+  		} else {
+  			$("#site-header").removeClass("nav-fixed");
+  		}
+  	});
+
+  	//Main navigation Active Class Add Remove
+  	$(".navbar-toggler").on("click", function () {
+  		$("header").toggleClass("active");
+  	});
+  	$(document).on("ready", function () {
+  		if ($(window).width() > 991) {
+  			$("header").removeClass("active");
+  		}
+  		$(window).on("resize", function () {
+  			if ($(window).width() > 991) {
+  				$("header").removeClass("active");
+  			}
+  		});
+  	});
+  </script>
+  <!--//MENU-JS-->
+  <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+
+  </body>
+
+  </html>
