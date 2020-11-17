@@ -13,3 +13,6 @@ For code Inspection the document is given by the name Inspection-Code-Mystic Gan
 
 
 Development Phase 2 code is under Project Source Code folder.
+
+
+testdata contains images of the food items to be trained
