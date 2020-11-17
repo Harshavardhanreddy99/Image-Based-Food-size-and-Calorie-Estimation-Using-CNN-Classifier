@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="w3l-breadcrumb">
+    <div class="container">
+        <ul class="breadcrumbs-custom-path">
+            <li><a href="/">Home</a></li>
+            <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span>User Login</li>
+        </ul>
+    </div>
+</section>
+<section class="w3l-contact-11 py-5">
+    <div class="contacts-main py-lg-5 py-md-4">
+      <div class="contant11-top-bg">
+
+		<center><font size="+1" color="red">{{msg}}</h2></center>
+		<div class="container">
+
+           <div class="title-content text-center">
+                <h6 class="sub-title">User</h6>
+                <h3 class="title-big">Login Page for User</h3>
+            </div>
+
+<form method="post" action="/userlogin/">
+	{% csrf_token %} 
+	<center>
+<table  width="50%" cellspacing="10">
+                    
+                    <tr><td><input class="form-control"  type="email" name="mail" placeholder="Email, example@example.com" required="required"></input></td></tr>
+                    <tr><td><input class="form-control"  type="Password" name="pwd" placeholder="Password" required="required" onblur="validate5()"></input></td></tr>
+                    <tr><td><br><input type="submit" class="form-control" value="Login">
+                        
+                
+</table>
+</form>
+
+{% endblock %}
